@@ -14,6 +14,10 @@
 		DD5EAF801A731D650092747B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EAF7F1A731D650092747B /* Images.xcassets */; };
 		DD5EAF831A731D650092747B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD5EAF811A731D650092747B /* LaunchScreen.xib */; };
 		DD5EAF8F1A731D650092747B /* Agenda_CPBR8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EAF8E1A731D650092747B /* Agenda_CPBR8Tests.swift */; };
+		DD6D426D1A7847D8006E9E34 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6D42661A7847C4006E9E34 /* SwiftyJSON.framework */; };
+		DD6D426E1A7847D8006E9E34 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD6D42661A7847C4006E9E34 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD6D42741A784897006E9E34 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D42721A784897006E9E34 /* SwiftyJSON.swift */; };
+		DD6D42751A784897006E9E34 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D42731A784897006E9E34 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,56 @@
 			remoteGlobalIDString = DD5EAF6F1A731D650092747B;
 			remoteInfo = "Agenda CPBR8";
 		};
+		DD6D42651A7847C4006E9E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
+		DD6D42671A7847C4006E9E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = SwiftyJSONTests;
+		};
+		DD6D42691A7847C4006E9E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1C91A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSX;
+		};
+		DD6D426B1A7847C4006E9E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1D31A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSXTests;
+		};
+		DD6D426F1A7847D8006E9E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD6D42711A7847D8006E9E34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD6D426E1A7847D8006E9E34 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DD5EAF701A731D650092747B /* Agenda CPBR8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda CPBR8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +91,9 @@
 		DD5EAF881A731D650092747B /* Agenda CPBR8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Agenda CPBR8Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EAF8D1A731D650092747B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5EAF8E1A731D650092747B /* Agenda_CPBR8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda_CPBR8Tests.swift; sourceTree = "<group>"; };
+		DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = swfityJson/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		DD6D42721A784897006E9E34 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		DD6D42731A784897006E9E34 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6D426D1A7847D8006E9E34 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +121,7 @@
 				DD5EAF721A731D650092747B /* Agenda CPBR8 */,
 				DD5EAF8B1A731D650092747B /* Agenda CPBR8Tests */,
 				DD5EAF711A731D650092747B /* Products */,
+				DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +137,10 @@
 		DD5EAF721A731D650092747B /* Agenda CPBR8 */ = {
 			isa = PBXGroup;
 			children = (
-				DD5EAF751A731D650092747B /* AppDelegate.swift */,
+				DD6D42721A784897006E9E34 /* SwiftyJSON.swift */,
+				DD6D42731A784897006E9E34 /* DataManager.swift */,
 				DD5EAF7A1A731D650092747B /* ViewController.swift */,
 				DD5EAF7C1A731D650092747B /* Main.storyboard */,
-				DD5EAF7F1A731D650092747B /* Images.xcassets */,
-				DD5EAF811A731D650092747B /* LaunchScreen.xib */,
-				DD5EAF771A731D650092747B /* Agenda_CPBR8.xcdatamodeld */,
 				DD5EAF731A731D650092747B /* Supporting Files */,
 			);
 			path = "Agenda CPBR8";
@@ -93,6 +149,10 @@
 		DD5EAF731A731D650092747B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD5EAF751A731D650092747B /* AppDelegate.swift */,
+				DD5EAF771A731D650092747B /* Agenda_CPBR8.xcdatamodeld */,
+				DD5EAF7F1A731D650092747B /* Images.xcassets */,
+				DD5EAF811A731D650092747B /* LaunchScreen.xib */,
 				DD5EAF741A731D650092747B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,6 +175,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD6D425F1A7847C4006E9E34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D42661A7847C4006E9E34 /* SwiftyJSON.framework */,
+				DD6D42681A7847C4006E9E34 /* SwiftyJSONTests.xctest */,
+				DD6D426A1A7847C4006E9E34 /* SwiftyJSON.framework */,
+				DD6D426C1A7847C4006E9E34 /* SwiftyJSONOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +196,12 @@
 				DD5EAF6C1A731D650092747B /* Sources */,
 				DD5EAF6D1A731D650092747B /* Frameworks */,
 				DD5EAF6E1A731D650092747B /* Resources */,
+				DD6D42711A7847D8006E9E34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD6D42701A7847D8006E9E34 /* PBXTargetDependency */,
 			);
 			name = "Agenda CPBR8";
 			productName = "Agenda CPBR8";
@@ -182,6 +255,12 @@
 			mainGroup = DD5EAF671A731D650092747B;
 			productRefGroup = DD5EAF711A731D650092747B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD6D425F1A7847C4006E9E34 /* Products */;
+					ProjectRef = DD6D425E1A7847C4006E9E34 /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD5EAF6F1A731D650092747B /* Agenda CPBR8 */,
@@ -189,6 +268,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD6D42661A7847C4006E9E34 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = DD6D42651A7847C4006E9E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD6D42681A7847C4006E9E34 /* SwiftyJSONTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONTests.xctest;
+			remoteRef = DD6D42671A7847C4006E9E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD6D426A1A7847C4006E9E34 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = DD6D42691A7847C4006E9E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD6D426C1A7847C4006E9E34 /* SwiftyJSONOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONOSXTests.xctest;
+			remoteRef = DD6D426B1A7847C4006E9E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD5EAF6E1A731D650092747B /* Resources */ = {
@@ -216,8 +326,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5EAF7B1A731D650092747B /* ViewController.swift in Sources */,
+				DD6D42751A784897006E9E34 /* DataManager.swift in Sources */,
 				DD5EAF761A731D650092747B /* AppDelegate.swift in Sources */,
 				DD5EAF791A731D650092747B /* Agenda_CPBR8.xcdatamodeld in Sources */,
+				DD6D42741A784897006E9E34 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +348,11 @@
 			isa = PBXTargetDependency;
 			target = DD5EAF6F1A731D650092747B /* Agenda CPBR8 */;
 			targetProxy = DD5EAF891A731D650092747B /* PBXContainerItemProxy */;
+		};
+		DD6D42701A7847D8006E9E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			targetProxy = DD6D426F1A7847D8006E9E34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Agenda CPBR8/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Agenda CPBR8/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +528,7 @@
 				DD5EAF941A731D650092747B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD5EAF951A731D650092747B /* Build configuration list for PBXNativeTarget "Agenda CPBR8Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +537,7 @@
 				DD5EAF971A731D650092747B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
